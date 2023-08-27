@@ -1,6 +1,6 @@
 class Marca:
     def __init__(self, nombre):
-        self.nombre = nombre
+        self._nombre = nombre
 
     def get_nombre(self):
         return self.nombre
@@ -9,15 +9,15 @@ class Marca:
         self.nombre = nombre
 
 class TV:
-    numTV = 0
+    _numTV = 0
 
     def __init__(self, marca, estado):
-        self.marca = marca
-        self.canal = 1
-        self.precio = 500
-        self.estado = estado
-        self.volumen = 1
-        self.control = None
+        self._marca = marca
+        self._canal = 1
+        self._precio = 500
+        self._estado = estado
+        self._volumen = 1
+        self._control = None
         TV.numTV += 1
 
     def get_marca(self):
@@ -85,7 +85,7 @@ class TV:
 
 class Control:
     def __init__(self):
-        self.tv = None
+        self._tv = None
 
     def enlazar(self, tv):
         self.tv = tv
