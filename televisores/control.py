@@ -38,8 +38,8 @@ class Control:
 
     def setVolumen(self, volumen):
         if self.tv is not None:
-            self.tv.set_volumen(volumen)
+            self.tv.setvolumen(volumen)
 
     def setCanal(self, canal):
         if self.tv is not None:
-            self.tv.set_canal(canal)
+            self.tv.setCanal(canal)
