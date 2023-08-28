@@ -3,11 +3,11 @@ class TV:
 
     def __init__(self, marca, estado):
         self.marca = marca
-        self._canal = 1
-        self._precio = 500
+        self.canal = 1
+        self.precio = 500
         self.estado = estado
-        self._volumen = 1
-        self._control = None
+        self.volumen = 1
+        self.control = None
         TV._numTV += 1
 
     def getMarca(self):
@@ -19,6 +19,8 @@ class TV:
     def setCanal(self, canal):
         if self.estado and 1 <= canal <= 120:
             self.canal = canal
+    def getCanal(self):
+        return self.canal
 
     def getPrecio(self):
         return self.precio
