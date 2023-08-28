@@ -4,7 +4,7 @@ class Control:
 
     def enlazar(self, tv):
         self.tv = tv
-        tv.set_control(self)
+        tv.setControl(self)
 
     def turnOn(self):
         if self.tv is not None:
@@ -16,19 +16,19 @@ class Control:
 
     def canalUp(self):
         if self.tv is not None:
-            self.tv.canal_up()
+            self.tv.canal_Up()
 
     def canalDown(self):
         if self.tv is not None:
-            self.tv.canal_down()
+            self.tv.canal_Down()
 
     def volumenUp(self):
         if self.tv is not None:
-            self.tv.volumen_up()
+            self.tv.volumen_Up()
 
     def volumenDown(self):
         if self.tv is not None:
-            self.tv.volumen_down()
+            self.tv.volumen_Down()
 
     def getTv(self):
         return self.tv

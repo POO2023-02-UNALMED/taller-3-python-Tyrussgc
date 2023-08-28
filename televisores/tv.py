@@ -42,10 +42,10 @@ class TV:
         self.control = control
 
     @staticmethod
-    def get_num_TV():
+    def getNumTV():
         return TV._numTV
 
-    def set_num_TV(nuevo_Num_TV):
+    def setNumTV(nuevo_Num_TV):
         TV._numTV = nuevo_Num_TV
 
     def turnOn(self):
