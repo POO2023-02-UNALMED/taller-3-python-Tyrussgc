@@ -17,8 +17,8 @@ class TV:
         self.marca = marca
 
     def setCanal(self, canal):
-        if self.estado and 1 <= canal <= 120:
-            self.canal = canal
+        if self.tv is not None:
+            self.tv.set_canal(canal)
     def getCanal(self):
         return self.canal
 
@@ -32,8 +32,8 @@ class TV:
         return self.volumen
 
     def setVolumen(self, volumen):
-        if self.estado and 0 <= volumen <= 7:
-            self.volumen = volumen
+        if self.tv is not None:
+            self.tv.set_volumen(volumen)
 
     def getControl(self):
         return self.control
