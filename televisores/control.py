@@ -8,27 +8,27 @@ class Control:
 
     def turnOn(self):
         if self.tv is not None:
-            self.tv.turn_on()
+            self.tv.turnOn()
 
     def turnOff(self):
         if self.tv is not None:
-            self.tv.turn_off()
+            self.tv.turnOff()
 
     def canalUp(self):
         if self.tv is not None:
-            self.tv.canal_Up()
+            self.tv.canalUp()
 
     def canalDown(self):
         if self.tv is not None:
-            self.tv.canal_Down()
+            self.tv.canalDown()
 
     def volumenUp(self):
         if self.tv is not None:
-            self.tv.volumen_Up()
+            self.tv.volumenUp()
 
     def volumenDown(self):
         if self.tv is not None:
-            self.tv.volumen_Down()
+            self.tv.volumenDown()
 
     def getTv(self):
         return self.tv
@@ -38,7 +38,7 @@ class Control:
 
     def setVolumen(self, volumen):
         if self.tv is not None:
-            self.tv.setvolumen(volumen)
+            self.tv.setVolumen(volumen)
 
     def setCanal(self, canal):
         if self.tv is not None:
